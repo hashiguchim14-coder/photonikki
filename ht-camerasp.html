@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+.header img {
+    width: 58px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+p {
+    font-size: 15pt;
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #601986;
+}
+hr {
+    height: 1px;
+    background-color: #000000;
+    border: none;
+}
+.example {
+    margin-top: 30px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;　　　　 /*画像を横に並べる*/
+}
+.example2 {
+    position: relative;
+    margin-top: 25px;
+    margin-right:0px;
+    margin-left: 45px;          /*画像の位置*/
+}
+.example2 img {
+    position: relative;
+    transform: scale(1.0);
+    transition: .2s  ease-in-out;
+    z-index: 10;
+    transform-origin: bottom left;
+}
+.example2:hover img {
+    transform: scale(1.4);
+    z-index: 20;
+}
+.example2 figcaption {
+    color: #601986;
+    font-size: 16px;
+    opacity: .0;
+    transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
+}
+.example2:hover figcaption {
+    opacity: 1;
+    z-index: ;
+}
+.caption {
+    font-size:  px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;          /*画像を基準に位置決め*/
+    right: 0;
+    bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #601986;
+}
+</style>
+	<title></title>
+</head>
+<body>
+	<div class="header">
+    <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/MasamiHashiguchi.html"><img src="/Users/hashiguchimanami/Documents/HTML/photonikki/photo/top/logo-1.png"></a>
+    </div>
+   
+    <p>#smartphone</p>
+    
+
+<div class="example">
+    <figure class="example2">
+        <img src="photo/20260515/20260515-3.jpg" alt="写真" width="470.1" height="313.5">
+        <figcaption class="tag">
+           <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-food.html">(#food)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-black.html">(#red)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-silver.html">(#silver)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerasp.html">(#smartphone)</a>
+    </figure>
+    <figure class="example2">
+        <img src="photo/20260508/20260508-1.jpg" alt="写真" width="511.8" height="287.7">
+        <figcaption class="tag">
+           <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-life.html">(#life)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-green.html">(#green)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerasp.html">(#smartphone)</a>
+        </figcaption>
+    </figure>
+    <figure class="example2">
+        <img src="photo/20260508/20260508-4.jpg" alt="写真" width="511.8" height="287.7">
+        <figcaption class="tag">
+           <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-street.html">(#street)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-terracotta.html">(#terracotta)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerasp.html">(#smartphone)</a>
+        </figcaption>
+    </figure>
+</div>
+
+
+
+</body>
+</html>

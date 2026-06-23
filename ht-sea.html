@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+.header img {
+    width: 58px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+p {
+    font-size: 15pt;
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #601986;
+}
+hr {
+    height: 1px;
+    background-color: #000000;
+    border: none;
+}
+.example {
+    margin-top: 30px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;　　　　 /*画像を横に並べる*/
+}
+.example2 {
+    position: relative;
+    margin-top: 25px;
+    margin-right:0px;
+    margin-left: 45px;          /*画像の位置*/
+}
+.example2 img {
+    position: relative;
+    transform: scale(1.0);
+    transition: .2s  ease-in-out;
+    z-index: 10;
+    transform-origin: bottom left;
+}
+.example2:hover img {
+    transform: scale(1.4);
+    z-index: 20;
+}
+.example2 figcaption {
+    font-size: 16px;
+    color: #601986;
+    opacity: .0;
+    transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
+}
+.example2:hover figcaption {
+    opacity: 1;
+    z-index: ;
+}
+
+a{
+    text-decoration: none;
+    color: #601986;
+}
+</style>
+	<title></title>
+</head>
+<body>
+	<div class="header">
+    <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/MasamiHashiguchi.html"><img src="/Users/hashiguchimanami/Documents/HTML/photonikki/photo/top/logo-1.png"></a>
+    </div>
+   
+    <p>#sea</p>
+    
+
+<div class="example">
+    <figure class="example2">
+        <img src="photo/20260621/20260621-1.jpg" alt="写真" width="435.8" height="304.7">
+        <figcaption class="tag">
+            <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-gray.html">(#gray)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerafilm.html">(#film)</a>
+        </figcaption>
+    </figure>
+    <figure class="example2">
+        <img src="photo/20260621/20260621-2.jpg" alt="写真" width="435.8" height="304.7">
+        <figcaption class="tag">
+            <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-gray.html">(#gray)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerafilm.html">(#film)</a>
+        </figcaption>
+    </figure>
+    <figure class="example2">
+        <img src="photo/20260520/20260520-1.jpg" alt="写真" width="445.44"height="296.96">
+        <figcaption class="tag">
+            <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+        </figcaption>
+    </figure>
+    <figure class="example2">
+        <img src="photo/20260517/20260517-1.jpg" alt="写真" width="445.44"height="296.96">
+        <figcaption class="tag">
+            <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-orange.html">(#orange)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+        </figcaption>
+    </figure>
+     <figure class="example2">
+        <img src="photo/20260517/20260517-4.jpg" alt="写真" width="413.4" height="276.9">
+        <figcaption class="tag">
+            <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-water.html">(#water)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+        </figcaption>
+    </figure>
+    <figure class="example2">
+        <img src="photo/20260517/20260517-7.jpg" alt="写真" width="445.44" height="296.96">
+        <figcaption class="tag">
+            (#human) <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-bird.html">(#bird)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+        </figcaption>
+    </figure>
+</div>
+
+
+
+</body>
+</html>

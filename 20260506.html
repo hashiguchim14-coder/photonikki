@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+h1 {
+    font-size: 22px;
+    color: #601986;
+    padding: 8px 14px;
+    margin-bottom: 70px;
+}
+.header img {
+    width: 58px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.example {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;　　　　 /*画像を横に並べる*/
+}
+.example2 {
+    position: relative;
+    margin-top: 25px;
+    margin-right:0px;
+    margin-left: 45px;          /*画像の位置*/
+}
+.example2 img {
+    position: relative;
+    transform: scale(1.0);
+    transition: .2s  ease-in-out;
+    z-index: 10;
+    transform-origin: bottom left;
+}
+.example2:hover img {
+    transform: scale(1.4);
+    z-index: 20;
+}
+.example3 figcaption {
+    color: #601986;
+    font-size: 16px;
+    opacity: .0;
+    transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
+}
+.example3:hover figcaption {
+    opacity: 1;
+    z-index: ;
+}
+.caption {
+    font-size:  px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;          /*画像を基準に位置決め*/
+    right: 0;
+    bottom: 0;
+    color: #601986;
+}
+
+ol {
+    padding: 100px 14px 0px 40px;
+    color: #601986;
+    clear: left;
+}
+p  {
+    color: #601986;
+    font-size: 18px;
+    padding: 100px 30px 3px 40px;
+}
+a{
+    text-decoration: none;
+    color: #601986;
+}
+</style>
+	<title></title>
+</head>
+<body>
+  <div class="header">
+    <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/index.html"><img src="/Users/hashiguchimanami/Documents/HTML/photonikki/photo/top/logo-1.png"></a>
+  </div>
+
+<div class="example">
+    <figure class="example2">
+        <div class="example3">
+            <img src="photo/20260506/20260506-1.jpg" alt="写真" width="434.6"height="303.5">
+            <figcaption class="tag">
+                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-tree.html">(#tree)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-green.html">(#green)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerafilm.html">(#film)</a>
+            </figcaption>
+        </div>
+        <span class="caption">1</span>
+    </figure>
+    <figure class="example2">
+        <div class="example3">
+            <img src="photo/20260506/20260506-2.jpg" alt="写真" width="434.6"height="303.5">
+            <figcaption class="tag">
+                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-bird.html">(#bird)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-green.html">(#green)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-camerafilm.html">(#film)</a>
+            </figcaption>
+        </div>
+        <span class="caption">2</span>
+    </figure>
+</div>
+
+<ol>
+    <li>金沢</li>
+    <li>金沢</li>
+</ol>
+<p>2026年5月6日</p>
+</body>
+</html>
