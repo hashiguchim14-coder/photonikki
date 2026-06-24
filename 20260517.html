@@ -24,7 +24,30 @@ h1 {
     flex-wrap: wrap;
     align-items: flex-end;　　　　 /*画像を横に並べる*/
 }
-screen and (max-width: 500px) {
+.example2 {
+    position: relative;
+    margin-top: 25px;
+    margin-right:0px;
+    margin-left: 45px;          /*画像の位置*/
+}
+@media screen and (max-width: 500px) {
+    .example2 {
+        margin-left: 10px;
+    }
+}
+.example2 img {
+    position: relative;
+    transform: scale(1.0);
+    transition: .2s  ease-in-out;
+    z-index: 10;
+    transform-origin: bottom left;
+}
+.example2:hover img {
+    position: relative;
+    transform: scale(1.4);
+    z-index: 20;
+}
+@media screen and (max-width: 500px) {
     .example2 img {
         max-width: 70%;
         height: auto;
