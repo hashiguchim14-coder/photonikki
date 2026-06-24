@@ -24,30 +24,19 @@ h1 {
     flex-wrap: wrap;
     align-items: flex-end;　　　　 /*画像を横に並べる*/
 }
-.example2 {
-    position: relative;
-    margin-top: 25px;
-    margin-right:0px;
-    margin-left: 45px;          /*画像の位置*/
+screen and (max-width: 500px) {
+    .example2 img {
+        max-width: 70%;
+        height: auto;
+    }
 }
-.example2 img {
-    position: relative;
-    transform: scale(1.0);
-    transition: .2s  ease-in-out;
-    z-index: 10;
-    transform-origin: bottom left;
-}
-.example2:hover img {
-    transform: scale(1.4);
-    z-index: 20;
-}
-.example3 figcaption {
+.example2 figcaption {
     color: #601986;
     font-size: 16px;
     opacity: .0;
     transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
 }
-.example3:hover figcaption {
+.example2:hover figcaption {
     opacity: 1;
     z-index: ;
 }
@@ -59,7 +48,12 @@ h1 {
     right: 0;
     bottom: 0;
 }
-
+@media screen and (max-width: 500px) {
+    .caption {
+        position: absolute;
+        right: 30%;
+    }
+}
 ol {
     padding: 100px 14px 0px 40px;
     color: #601986;
@@ -83,69 +77,55 @@ a{
   </div>
 
 <div class="example">
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-1.jpg" alt="写真" width="445.44"height="296.96">
             <figcaption class="tag">
                 <a href="ht-sea.html">(#sea)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-orange.html">(#orange)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">1</span>
         </div>
-        <span class="caption">1</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-2.jpg" alt="写真" width="460.8" height="319.8">
             <figcaption class="tag">
                 <a href="ht-home.html">(#home)</a> <a href="ht-white.html">(#white)</a> <a href="/ht-camerafilm.html">(#film)</a>
             </figcaption>
+            <span class="caption">2</span>
         </div>
-        <span class="caption">2</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-3.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
                <a href="ht-bird.html">(#bird)</a> <a href="ht-orange.html">(#orange)</a>  <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">3</span>
         </div>
-        <span class="caption">3</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-4.jpg" alt="写真" width="413.4" height="276.9">
             <figcaption class="tag">
                 <a href="ht-sea.html">(#sea)</a> <a href="ht-water.html">(#water)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">4</span>
         </div>
-        <span class="caption">4</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-5.jpg" alt="写真" width="434.6" height="303.5">
             <figcaption class="tag">
                 <a href="ht-food.html">(#food)</a> <a href="ht-black.html">(#black)</a> <a href="ht-camerafilm.html">(#film)</a>
             </figcaption>
+            <span class="caption">5</span>
         </div>
-        <span class="caption">5</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-6.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
                 <a href="ht-water.html">(#water)</a> <a href="ht-black.html">(#black)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">6</span>
         </div>
-        <span class="caption">6</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260517/20260517-7.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
                 <a href="ht-human.html">(#human)</a> <a href="ht-sea.html">(#sea)</a> <a href="ht-bird.html">(#bird)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">7</span>
         </div>
-        <span class="caption">7</span>
-    </figure>
 </div>
 
 <ol>
