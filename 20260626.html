@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+body{
+    font-family: serif;
+}
+.header img {
+    width: 58px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.example {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;　　　　 /*画像を横に並べる*/
+}
+.example2 {
+    position: relative;
+    margin-top: 25px;
+    margin-right:0px;
+    margin-left: 45px;          /*画像の位置*/
+}
+@media screen and (max-width: 500px) {
+    .example2 {
+        margin-left: 10px;
+    }
+}
+.example2 img {
+    position: relative;
+    transform: scale(1.0);
+    transition: .2s  ease-in-out;
+    z-index: 10;
+    transform-origin: bottom left;
+}
+.example2:hover img {
+    position: relative;
+    transform: scale(1.4);
+    z-index: 20;
+}
+@media screen and (max-width: 500px) {
+    .example2 img {
+        max-width: 70%;
+        height: auto;
+    }
+}
+.example2 figcaption {
+    color: #601986;
+    font-size: 16px;
+    opacity: .0;
+    transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
+}
+.example2:hover figcaption {
+    opacity: 1;
+    z-index: ;
+}
+.caption {
+    font-size:  px;
+    color: #601986;
+    padding: 0px 0px 0px 0px;
+    position: absolute;          /*画像を基準に位置決め*/
+    right: 0;
+    bottom: 0;
+}
+@media screen and (max-width: 500px) {
+    .caption {
+        position: absolute;
+        right: 30%;
+    }
+    .example2 span {
+        opacity: 1.0;
+        transition: .2s  ease-in-out;
+    }
+    .example2:hover span {
+        opacity: .0;
+    }
+}
+ol {
+    padding: 100px 14px 0px 40px;
+    color: #601986;
+    clear: left;
+}
+p  {
+    color: #601986;
+    font-size: 18px;
+    padding: 100px 30px 3px 40px;
+}
+a{
+    text-decoration: none;
+    color: #601986;
+}
+</style>
+	<title></title>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"><img src="photo/top/logo-1.png"></a>
+  </div>
+
+<div class="example">
+        <div class="example2">
+            <img src="photo/20260626/20260626-1.jpg" alt="写真" width="445.44"height="296.96">
+            <figcaption class="tag">
+                <a href="ht-sea.html">(#sea)</a> <a href="ht-gray.html">(#gray)</a> <a href="ht-camerafilm.html">(#film)</a>
+            </figcaption>
+            <span class="caption">1</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260626/20260626-2.jpg" alt="写真" width="445.44"height="296.96">
+            <figcaption class="tag">
+                <a href="ht-sea.html">(#sea)</a> <a href="ht-gray.html">(#gray)</a> <a href="ht-camerafilm.html">(#film)</a>
+            </figcaption>
+            <span class="caption">2</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260626/20260626-3.jpg" alt="写真" width="445.44"height="296.96">
+            <figcaption class="tag">
+               <a href="ht-tree.html">(#tree)</a> <a href="ht-green.html">(#green)</a> <a href="ht-camerafilm.html">(#film)</a>
+            </figcaption>
+            <span class="caption">3</span>
+        </div>    
+        <div class="example2">
+            <img src="photo/20260626/20260626-4.jpg" alt="写真"width="445.44"height="296.96">
+            <figcaption class="tag">
+                 <a href="ht-flower.html">(#flower)</a> <a href="ht-green.html">(#green)</a> <a href="ht-camerafilm.html">(#film)</a>
+            </figcaption>
+            <span class="caption">4</span>
+        </div>
+</div>
+
+<ol>
+    <li>葛西の海</li>
+    <li>葛西の海の打ち上げられたクラゲ</li>
+    <li>21世紀の森と広場</li>
+    <li>スイカズラという植物</li>
+</ol>
+<p>2026年6月21日</p>
+</body>
+</html>
