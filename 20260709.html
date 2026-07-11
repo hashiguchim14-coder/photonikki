@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
+body{
+    font-family: serif;
+}
 h1 {
     font-size: 22px;
     color: #601986;
@@ -27,6 +30,11 @@ h1 {
     margin-right:0px;
     margin-left: 45px;          /*画像の位置*/
 }
+@media screen and (max-width: 500px) {
+    .example2 {
+        margin-left: 10px;
+    }
+}
 .example2 img {
     position: relative;
     transform: scale(1.0);
@@ -35,16 +43,23 @@ h1 {
     transform-origin: bottom left;
 }
 .example2:hover img {
+    position: relative;
     transform: scale(1.4);
     z-index: 20;
 }
-.example3 figcaption {
+@media screen and (max-width: 500px) {
+    .example2 img {
+        max-width: 70%;
+        height: auto;
+    }
+}
+.example2 figcaption {
     color: #601986;
     font-size: 16px;
     opacity: .0;
     transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
 }
-.example3:hover figcaption {
+.example2:hover figcaption {
     opacity: 1;
     z-index: ;
 }
@@ -56,7 +71,19 @@ h1 {
     right: 0;
     bottom: 0;
 }
-
+@media screen and (max-width: 500px) {
+    .caption {
+        position: absolute;
+        right: 30%;
+    }
+    .example2 span {
+        opacity: 1.0;
+        transition: .2s  ease-in-out;
+    }
+    .example2:hover span {
+        opacity: .0;
+    }
+}
 ol {
     padding: 100px 14px 0px 40px;
     color: #601986;
@@ -76,64 +103,52 @@ a{
 </head>
 <body>
   <div class="header">
-    <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/index.html"><img src="/Users/hashiguchimanami/Documents/HTML/photonikki/photo/top/logo-1.png"></a>
+    <a href="index.html"><img src="photo/top/logo-1.png"></a>
   </div>
 
 <div class="example">
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260709/20260709-1.jpg" alt="写真" width="445.44"height="296.96">
             <figcaption class="tag">
-                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-sea.html">(#sea)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+                <a href="ht-sea.html">(#sea)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">1</span>
         </div>
-        <span class="caption">1</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260709/20260709-2.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
-                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-food.html">(#food)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-orange.html">(#orange)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+                <a href="ht-food.html">(#food)</a> <a href="ht-orange.html">(#orange)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">2</span>
         </div>
-        <span class="caption">2</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260709/20260709-3.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
-               <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-flower.html">(#flower)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-red.html">(#red)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+               <a href="ht-flower.html">(#flower)</a> <a href="ht-red.html">(#red)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">3</span>
         </div>
-        <span class="caption">3</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260709/20260709-4.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
-                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-street.html">(#street)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+                <a href="ht-street.html">(#street)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">4</span>
         </div>
-        <span class="caption">4</span>
-    </figure>
-    <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260709/20260709-5.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
-                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-street.html">(#street)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-blue.html">(#blue)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+                <a href="ht-street.html">(#street)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">5</span>
         </div>
-        <span class="caption">5</span>
-    </figure>
-     <figure class="example2">
-        <div class="example3">
+        <div class="example2">
             <img src="photo/20260709/20260709-6.jpg" alt="写真" width="445.44" height="296.96">
             <figcaption class="tag">
-                <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-food.html">(#food)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-orange.html">(#orange)</a> <a href="/Users/hashiguchimanami/Documents/HTML/photonikki/ht-cameradigital.html">(#digitalcamera)</a>
+                <a href="ht-food.html">(#food)</a> <a href="ht-orange.html">(#orange)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
             </figcaption>
+            <span class="caption">6</span>
         </div>
-        <span class="caption">6</span>
-    </figure>
 </div>
 
 <ol>
