@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+body{
+    font-family: serif;
+}
+h1 {
+    font-size: 22px;
+    color: #601986;
+    padding: 8px 14px;
+    margin-bottom: 70px;
+}
+.header img {
+    width: 58px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.example {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;　　　　 /*画像を横に並べる*/
+}
+.example2 {
+    position: relative;
+    margin-top: 25px;
+    margin-right:0px;
+    margin-left: 45px;          /*画像の位置*/
+}
+@media screen and (max-width: 500px) {
+    .example2 {
+        margin-left: 10px;
+    }
+}
+.example2 img {
+    position: relative;
+    transform: scale(1.0);
+    transition: .2s  ease-in-out;
+    z-index: 10;
+    transform-origin: bottom left;
+}
+.example2:hover img {
+    position: relative;
+    transform: scale(1.4);
+    z-index: 20;
+}
+@media screen and (max-width: 500px) {
+    .example2 img {
+        max-width: 70%;
+        height: auto;
+    }
+}
+.example2 figcaption {
+    color: #601986;
+    font-size: 16px;
+    opacity: .0;
+    transition: .2s  ease-in-out, z-index .0s;    /*キャプション動き*/
+}
+.example2:hover figcaption {
+    opacity: 1;
+    z-index: ;
+}
+.caption {
+    font-size:  px;
+    color: #601986;
+    padding: 0px 0px 0px 0px;
+    position: absolute;          /*画像を基準に位置決め*/
+    right: 0;
+    bottom: 0;
+}
+@media screen and (max-width: 500px) {
+    .caption {
+        position: absolute;
+        right: 30%;
+    }
+    .example2 span {
+        opacity: 1.0;
+        transition: .2s  ease-in-out;
+    }
+    .example2:hover span {
+        opacity: .0;
+    }
+}
+ol {
+    padding: 100px 14px 0px 40px;
+    color: #601986;
+    clear: left;
+}
+p  {
+    color: #601986;
+    font-size: 18px;
+    padding: 100px 30px 3px 40px;
+}
+a{
+    text-decoration: none;
+    color: #601986;
+}
+</style>
+	<title></title>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"><img src="photo/top/logo-1.png"></a>
+  </div>
+
+<div class="example">
+        <div class="example2">
+            <img src="photo/20260809/20260809-1.jpg" alt="写真" width="445.44"height="296.96">
+            <figcaption class="tag">
+                <a href="ht-bird.html">(#bird)</a> <a href="ht-gray.html">(#gray)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">1</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-2.jpg" alt="写真" width="445.44" height="296.96">
+            <figcaption class="tag">
+                <a href="ht-water.html">(#water)</a> <a href="ht-silver.html">(#silver)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">2</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-3.jpg" alt="写真" width="445.44" height="296.96">
+            <figcaption class="tag">
+               <a href="ht-sea.html">(#sea)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">3</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-4.jpg" alt="写真" width="445.44" height="296.96">
+            <figcaption class="tag">
+                <a href="ht-water.html">(#water)</a> <a href="ht-black.html">(#black)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">4</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-5.jpg" alt="写真" width="445.44" height="296.96"> 
+            <figcaption class="tag">
+                <a href="ht-water.html">(#water)</a> <a href="ht-gray.html">(#gray)</a> <a href="ht-camerafilm.html">(#film)</a>
+            </figcaption>
+            <span class="caption">5</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-6.jpg" alt="写真" width="445.44" height="296.96">
+            <figcaption class="tag">
+                <a href="ht-terracotta.html">(#terracotta)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">6</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-7.jpg" alt="写真" width="445.44" height="296.96">
+            <figcaption class="tag">
+                <a href="ht-sea.html">(#sea)</a> <a href="ht-blue.html">(#blue)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">7</span>
+        </div>
+        <div class="example2">
+            <img src="photo/20260809/20260809-8.jpg" alt="写真" width="445.44" height="296.96">
+            <figcaption class="tag">
+                <a href="ht-sea.html">(#sea)</a> <a href="ht-green.html">(#green)</a> <a href="ht-cameradigital.html">(#digitalcamera)</a>
+            </figcaption>
+            <span class="caption">8</span>
+        </div>
+</div>
+
+<ol>
+    <li>ハトのペア。目の色が違う</li>
+    <li>光の反射が貝の光沢みたいに撮れた川</li>
+    <li>引き潮の海</li>
+    <li>水のしぶきがいろんな色を反射している</li>
+    <li>池の水面をフィルムカメラで撮った</li>
+    <li>ソラマチ（スカイツリー下）から見た街並み</li>
+    <li>引き潮の砂浜</li>
+    <li>オーストラリアのケアンズの海。今日は水の写真を多めに選んだ。水にはいろんな表情がある</li>
+</ol>
+<p>2026年8月9日</p>
+</body>
+</html>
